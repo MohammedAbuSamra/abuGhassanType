@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+body {
+  background-color: #323437;
+  overflow: hidden;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+
+.input {
+  color: white;
+  font-size: 0;
+  line-height: 3rem;
+  outline: none;
+  z-index: 5;
+  width: 98vw;
+  margin: 0 auto;
+
+  caret-color: #e2b714;
+  word-break: break-all;
+      text-align: left;
+     caret-color: transparent;
+}
+.true {
+    font-size: 2rem;
+  
+}
+.sentence {
+  color: #646669;
+   pointer-events: none;
+  font-size: 2rem;
+  white-space: pre-wrap;
+
+}
+
+.wrong {
+  color: #ca4754;
+}
+
+
+.writeBox{
+   outline: none;
+     font-size: 2rem;
+     
+
+         
+
+}
+
+.writtenContainer{
+position: relative;
+}
+
+
+.writtenContainer .after {
+    width: 3px;
+    height: 40px;
+    position: absolute;
+    bottom: -8px;
+    right: -2px;
+    background-color: #e2b714;
+  
+}
+
+
+.move {
+  animation: move 300ms ease-in-out 0s;
+}
+
+
+
+
+
+@keyframes move {
+  from {
+  right: 15px;
+  }
+  to {
+  right: -2px;
+  }
+  
+}
+
+
+.time {
+  color: #e2b714;
+  font-size: 1.5rem;
+
+}
+
+.result {
+  color: #d1d0c5;
+
+  font-size: 1.5rem;
+
+}
+
+.result-detail {
+  color:#e2b714 ;
+}
